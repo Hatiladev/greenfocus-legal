@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Política de Privacidade — GreenFocus</title>
+<style>
+  :root { color-scheme: light dark; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65; color: #1a2420; background: #ffffff;
+    max-width: 780px; margin: 0 auto; padding: 32px 20px 80px;
+  }
+  h1 { font-size: 1.7rem; color: #1a6e35; margin-bottom: 4px; }
+  h2 { font-size: 1.15rem; color: #1a6e35; margin-top: 34px; border-bottom: 1px solid #e6efe9; padding-bottom: 6px; }
+  h3 { font-size: 1rem; margin-top: 20px; }
+  .meta { color: #5a6b5f; font-size: 0.9rem; margin-bottom: 24px; }
+  ul { padding-left: 20px; }
+  li { margin: 6px 0; }
+  code, .pkg { background: #f0f4f1; padding: 1px 6px; border-radius: 5px; font-size: 0.9em; }
+  .box { background: #f4f9f6; border: 1px solid #d8ebe0; border-radius: 12px; padding: 14px 18px; margin: 18px 0; }
+  a { color: #1a6e35; }
+  @media (prefers-color-scheme: dark) {
+    body { background: #0f1512; color: #e4ece7; }
+    h1, h2, h3 { color: #6fcf97; }
+    h2 { border-color: #1e2b24; }
+    .meta { color: #9aab9f; }
+    code, .pkg { background: #1a241f; }
+    .box { background: #14201a; border-color: #26372e; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Política de Privacidade — GreenFocus</h1>
+<p class="meta">
+  Última atualização: 29 de julho de 2026<br>
+  Aplicativo: <strong>GreenFocus</strong> (bem-estar digital e foco)
+</p>
+
+<div class="box">
+  <strong>Resumo em uma frase:</strong> o GreenFocus coleta apenas o necessário para funcionar
+  (sua conta, seu tempo de foco e o tempo de tela do aparelho), <strong>não vende seus dados</strong>,
+  e usa as permissões do Android exclusivamente para bloquear apps distrativos durante o foco.
+</div>
+
+<h2>1. Quem somos (Controlador dos dados)</h2>
+<p>
+  Esta política descreve como o GreenFocus trata seus dados pessoais, em conformidade com a
+  Lei Geral de Proteção de Dados (Lei nº 13.709/2018 — LGPD).
+</p>
+<ul>
+  <li><strong>Responsável:</strong> [NOME DO RESPONSÁVEL OU RAZÃO SOCIAL]</li>
+  <li><strong>Contato / Encarregado (DPO):</strong> <a href="mailto:greenfocus.contact@gmail.com">greenfocus.contact@gmail.com</a></li>
+</ul>
+
+<h2>2. Quais dados coletamos</h2>
+
+<h3>a) Dados de conta</h3>
+<ul>
+  <li><strong>Nome</strong> e <strong>e-mail</strong>, fornecidos por você no cadastro.</li>
+  <li>A <strong>senha</strong> é gerenciada de forma segura pelo nosso provedor de autenticação
+      (Supabase) e armazenada de forma criptografada — nós não temos acesso à sua senha em texto puro.</li>
+</ul>
+
+<h3>b) Dados de uso do app (vinculados à sua conta)</h3>
+<ul>
+  <li>Suas <strong>metas</strong>, <strong>histórico de foco</strong>, <strong>sequência (ofensiva)</strong>,
+      <strong>idioma</strong> e preferências. Servem para mostrar suas estatísticas e manter seu progresso
+      entre dispositivos.</li>
+</ul>
+
+<h3>c) Estatísticas de uso do aparelho (tempo de tela)</h3>
+<ul>
+  <li>Com a permissão de <strong>Acesso ao uso</strong>, o app lê o <strong>tempo de tela</strong> e o
+      tempo de uso de cada aplicativo do seu aparelho para exibir seus relatórios e viabilizar o bloqueio.</li>
+  <li>Esses dados brutos de uso são processados <strong>no próprio aparelho</strong>. Apenas informações
+      agregadas do seu progresso (ex.: minutos de foco por dia) são sincronizadas à sua conta.</li>
+</ul>
+
+<h3>d) Conversas com a IA Zen</h3>
+<ul>
+  <li>Quando você conversa com o assistente <strong>Zen</strong>, as mensagens que você envia são
+      transmitidas ao nosso servidor e ao provedor de modelo de linguagem (<strong>Groq</strong>) para
+      gerar a resposta. Podemos incluir seu primeiro nome e dados agregados de produtividade para
+      personalizar a resposta. Não use esse chat para compartilhar dados sensíveis.</li>
+</ul>
+
+<h2>3. Permissões do Android e por que usamos</h2>
+<p>O GreenFocus é um app de foco. Cada permissão tem um uso específico e limitado:</p>
+<ul>
+  <li><strong>Serviço de Acessibilidade</strong> — usado <u>exclusivamente</u> para identificar qual
+      aplicativo está aberto na tela e, assim, bloquear apps distrativos durante uma sessão de foco.
+      <strong>Não lemos o conteúdo da sua tela, senhas, mensagens ou dados pessoais.</strong></li>
+  <li><strong>Acesso ao uso (PACKAGE_USAGE_STATS)</strong> — para medir o tempo de tela e viabilizar
+      o bloqueio.</li>
+  <li><strong>Exibir sobre outros apps (SYSTEM_ALERT_WINDOW)</strong> — para mostrar a tela de bloqueio
+      por cima do app bloqueado.</li>
+  <li><strong>Notificações e serviço em primeiro plano</strong> — para manter o bloqueio ativo durante
+      o modo foco e avisar você.</li>
+  <li><strong>Otimização de bateria / início automático</strong> — para o bloqueio não ser desligado
+      pelo sistema em segundo plano.</li>
+</ul>
+
+<h2>4. Como usamos os dados</h2>
+<ul>
+  <li>Criar e manter sua conta e autenticar seu acesso.</li>
+  <li>Fornecer as funções do app: foco, bloqueio, estatísticas, metas e o assistente Zen.</li>
+  <li>Manter seu progresso sincronizado entre aparelhos.</li>
+  <li>Melhorar a estabilidade e a experiência do app.</li>
+</ul>
+<p><strong>Não vendemos seus dados pessoais</strong> e não os usamos para publicidade de terceiros.</p>
+
+<h2>5. Com quem compartilhamos</h2>
+<p>Compartilhamos dados apenas com provedores que viabilizam o funcionamento do app:</p>
+<ul>
+  <li><strong>Supabase</strong> — autenticação e armazenamento dos dados da sua conta.</li>
+  <li><strong>Groq</strong> — processamento das mensagens enviadas ao assistente Zen para gerar respostas.</li>
+</ul>
+<p>Esses provedores tratam os dados conforme suas próprias políticas de segurança e privacidade.</p>
+
+<h2>6. Armazenamento e retenção</h2>
+<ul>
+  <li>Os dados da sua conta são mantidos enquanto sua conta existir.</li>
+  <li>Ao excluir sua conta, os dados associados são removidos. Para solicitar exclusão, use
+      <a href="mailto:greenfocus.contact@gmail.com">greenfocus.contact@gmail.com</a>.</li>
+  <li>Dados guardados apenas no seu aparelho são apagados ao desinstalar o app.</li>
+</ul>
+
+<h2>7. Segurança</h2>
+<p>
+  Utilizamos comunicação criptografada (HTTPS) e provedores com práticas de segurança reconhecidas.
+  Nenhum sistema é 100% infalível, mas trabalhamos para proteger seus dados.
+</p>
+
+<h2>8. Seus direitos (LGPD)</h2>
+<p>Você pode, a qualquer momento:</p>
+<ul>
+  <li>Confirmar a existência de tratamento e <strong>acessar</strong> seus dados;</li>
+  <li><strong>Corrigir</strong> dados incompletos ou desatualizados;</li>
+  <li>Solicitar a <strong>exclusão</strong> dos seus dados / conta;</li>
+  <li>Solicitar a <strong>portabilidade</strong>;</li>
+  <li><strong>Revogar consentimento</strong>.</li>
+</ul>
+<p>Para exercer esses direitos, escreva para <a href="mailto:greenfocus.contact@gmail.com">greenfocus.contact@gmail.com</a>.</p>
+
+<h2>9. Crianças e adolescentes</h2>
+<p>
+  O GreenFocus não é direcionado a menores de 13 anos e não coletamos intencionalmente dados dessa faixa.
+  Recursos de controle parental, quando disponíveis, destinam-se ao uso por responsáveis.
+</p>
+
+<h2>10. Alterações nesta política</h2>
+<p>
+  Podemos atualizar esta política periodicamente. A data de "Última atualização" no topo indica a versão
+  vigente. Mudanças relevantes serão comunicadas no app.
+</p>
+
+<h2>11. Contato</h2>
+<p>
+  Dúvidas sobre privacidade ou sobre esta política:
+  <a href="mailto:greenfocus.contact@gmail.com">greenfocus.contact@gmail.com</a>.
+</p>
+
+</body>
+</html>
